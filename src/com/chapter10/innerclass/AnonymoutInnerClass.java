@@ -16,7 +16,7 @@ public class AnonymoutInnerClass {
 	public Animal getAnimal(String name){
 		//表示创建一个继承自Animal的匿名类的对象
 		return new Animal(name){
-			private String newName = name;
+			//private String str = name;如果使得该句编译通过，则需要将参数name定义为final类型的
 			public String getName(){
 				return super.getName()+" is Animal";
 			}
